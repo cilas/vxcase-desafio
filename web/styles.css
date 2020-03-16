@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background-color: #fafafa; */
+    color: #6c757d;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+a {
+    color: #6c757d !important;
+}
+
+a:hover {
+    color: #5c5c5c !important;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.carrinho {
+    border-left: 1px solid gray;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.totais {
+    width: 90%;
+    margin-top: 50px;
+}
+
+.products img {
+    margin-bottom: 10px;
+}
+
+#msg_finalizar {
+    margin-top: 10px;
+}
+
+.titulo {
+    margin-bottom: 30px;
+}
+
+.dados-venda {
+    padding-left: 20px;
+}
+
+.dados-venda h3 {
+    margin: 15px 0;
+}
+
+.venda-itens img {
+    height: 336px;
+    width: 336px;
+}
