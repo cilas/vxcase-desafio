@@ -1,4 +1,5 @@
-# Api construída em laravel
+# API - construída em laravel (Instruções)
+
 Para a execução da api, certifique-se de que possue:
 * Composer instalado
 * Banco de dados MYSQL
@@ -9,6 +10,19 @@ Antes de tudo, será necessário executar o comando abaixo para poder instalar a
 composer install
 ```
 
+### Env
+
+Copie o arquivo .env.example e renomei para .env
+Dentro do arquivo, insira as configurações da conexão com a database.
+
+Execute o comando abaixo para gerar o APP_KEY:
+```sh
+php artisan key:generate --show
+```
+
+O "--show" garante a saída da key gerada. Pro caso do comando não escrever diretamente no arquivo .env, você pode copiar a saída e inseri-lá manualmente no arquivo .env
+
+
 ### Migrations
 Para a criação das tabelas, execute o comando:
 ```sh
@@ -16,6 +30,15 @@ php artisan migrate
 ```
 
 Obs: A api foi construida utilizando o banco de dados MYSQL. Também será necessário criar a database ( recomendo criar com o nome vxcase).
+
+Comando exemplo para criação da database. (Comando a ser executado no banco de dados)
+```sh
+CREATE DATABASE vxcase
+	CHARACTER SET utf8mb4
+	COLLATE utf8mb4_general_ci;
+```
+
+
 
 ### Seeders
 A fins de testes, foi criado um arquivo de seeding para os produtos.
@@ -32,7 +55,7 @@ php artisan serve
 
 
 
-## Rotas
+### Rotas
 
 | Verbo  | Rota | Descrição | POST | QUERY PARAM |
 | ------ | ------ | ------ | ------ | ------ |
