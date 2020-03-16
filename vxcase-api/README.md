@@ -36,8 +36,8 @@ php artisan serve
 
 | Verbo  | Rota | Descrição | POST | QUERY PARAM |
 | ------ | ------ | ------ | ------ | ------ |
-| GET | /products | Retorna todos os produtos cadastrados | ||
-| GET | /orders | Retorna todas as vendas realizadas |||
-| GET | /orders/{order_id} | Retorna as informações da venda || order_id|
-| POST | /orders | Cadastra um pedido de venda | Array com os ids dos produtos desejados|
+| GET | /api/products | Retorna todos os produtos cadastrados | ||
+| GET | /api/orders | Retorna todas as vendas realizadas |||
+| GET | /api/orders/{order_id} | Retorna as informações da venda || order_id|
+| POST | /api/orders | Cadastra um pedido de venda | Array com os ids dos produtos desejados|
 
