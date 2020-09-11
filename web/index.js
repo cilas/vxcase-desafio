@@ -79,7 +79,7 @@ function addProdutoSelecionado() {
 //busca os produtos na api
 function getProdutos() {
     $.ajax({
-        url: 'http://127.0.0.1:8000/api/products',
+        url: 'http://localhost//api/products',
         method: "GET",
         dataType: 'json',
         success: function(json) {
@@ -101,7 +101,7 @@ function loadProdutos(products) {
 // finaliza a compra enviando o pedido para a pai
 function finalizarCompra(products) {
     $.ajax({
-        url: 'http://127.0.0.1:8000/api/orders',
+        url: 'http://localhost//api/orders',
         method: "POST",
         data: {products},
         dataType: 'json',

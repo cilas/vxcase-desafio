@@ -1,7 +1,7 @@
 //busca na api os dados das vendas
 function getOrders() {
     $.ajax({
-        url: 'http://127.0.0.1:8000/api/orders',
+        url: 'http://localhost//api/orders',
         method: "GET",
         dataType: 'json',
         success: function(json) {          
