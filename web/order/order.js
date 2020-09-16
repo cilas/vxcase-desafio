@@ -4,7 +4,7 @@ const order_id = urlParams.get('order_id');
 //busca na api os dados da venda
 function getOrder() {
     $.ajax({
-        url: `http://127.0.0.1:8000/api/orders/${order_id}`,
+        url: `http://localhost//api/orders/${order_id}`,
         method: "GET",
         dataType: 'json',
         success: function(json) {          
